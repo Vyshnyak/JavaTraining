@@ -27,11 +27,12 @@ public interface Constants {
     int GROUP_INDEX = 6;
     int HOME_PHONE_INDEX = 7;
     int CELL_PHONE_INDEX = 8;
-    int EMAIL_INDEX = 9;
-    int SKYPE_INDEX = 10;
-    int ADDRESS_INDEX = 11;
+    int SECOND_CELL_PHONE_INDEX = 9;
+    int EMAIL_INDEX = 10;
+    int SKYPE_INDEX = 11;
+    int ADDRESS_INDEX = 12;
 
-    int ELEMENT_MENU_BORDER = 11;
+    int ELEMENT_MENU_BORDER = 12;
 
     String NUMERATION_FORMAT = "%2d";
 
@@ -69,7 +70,8 @@ public interface Constants {
     String COMMENT = "comment";
     String GROUP = "group";
     String HOME_PHONE = "home.phone";
-    String CELL_PHONE = "cell.phone";
+    String CELL_PHONE_ONE = "cell.phone.one";
+    String CELL_PHONE_TWO = "cell.phone.two";
     String EMAIL = "email";
     String SKYPE = "skype";
     String ADDRESS = "address";

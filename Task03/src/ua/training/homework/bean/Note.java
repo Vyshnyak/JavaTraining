@@ -20,6 +20,7 @@ public class Note implements Cloneable {
     private Group group;
     private String homePhone;
     private String cellPhone;
+    private String secondCellPhone;
     private String email;
     private String skype;
     private Address address;
@@ -32,7 +33,7 @@ public class Note implements Cloneable {
 
     public Note(String lastName, String firstName, String middleName,
                 String nickname, String comment, Group group, String homePhone,
-                String cellPhone, String email, String skype, Address address) {
+                String cellPhone, String secondCellPhone, String email, String skype, Address address) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -42,6 +43,7 @@ public class Note implements Cloneable {
         this.group = group;
         this.homePhone = homePhone;
         this.cellPhone = cellPhone;
+        this.secondCellPhone = secondCellPhone;
         this.email = email;
         this.skype = skype;
         this.address = address;
@@ -144,6 +146,15 @@ public class Note implements Cloneable {
     }
 
     /**
+     * Sets an additional cell phone information to the corresponding note field
+     *
+     * @param  secondCellPhone  a person's cell phone to be put in the note field
+     */
+    public void setSecondCellPhone(String secondCellPhone) {
+        this.secondCellPhone = secondCellPhone;
+    }
+
+    /**
      * Sets an email information to the corresponding note field
      *
      * @param  email  a person's email to be put in the note field
@@ -215,7 +226,8 @@ public class Note implements Cloneable {
                 View.bundle.getString(Constants.COMMENT) + comment,
                 View.bundle.getString(Constants.GROUP) + group,
                 View.bundle.getString(Constants.HOME_PHONE) + homePhone,
-                View.bundle.getString(Constants.CELL_PHONE) + cellPhone,
+                View.bundle.getString(Constants.CELL_PHONE_ONE) + cellPhone,
+                View.bundle.getString(Constants.CELL_PHONE_TWO) + secondCellPhone,
                 View.bundle.getString(Constants.EMAIL) + email,
                 View.bundle.getString(Constants.SKYPE) + skype,
                 View.bundle.getString(Constants.ADDRESS) + fullAddress,
@@ -237,7 +249,8 @@ public class Note implements Cloneable {
                         View.bundle.getString(Constants.COMMENT) + comment,
                         View.bundle.getString(Constants.GROUP) + group,
                         View.bundle.getString(Constants.HOME_PHONE) + homePhone,
-                        View.bundle.getString(Constants.CELL_PHONE) + cellPhone,
+                        View.bundle.getString(Constants.CELL_PHONE_ONE) + cellPhone,
+                        View.bundle.getString(Constants.CELL_PHONE_TWO) + secondCellPhone,
                         View.bundle.getString(Constants.EMAIL) + email,
                         View.bundle.getString(Constants.SKYPE) + skype,
                         View.bundle.getString(Constants.ADDRESS) + fullAddress);

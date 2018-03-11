@@ -31,7 +31,7 @@ public class Controller {
      *         if cloning is not supported
      *
      * @throws IOException
-     *         if input stream was lost
+     *         If an I/O error occurs
      */
     public void processUser() throws CloneNotSupportedException, IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

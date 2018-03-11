@@ -11,7 +11,8 @@ public interface RegExp {
     String COMMENT = "^([\\wА-Яа-я'іІїЇ]+\\s)*[\\wА-Яа-я'іІїЇ]+$";
     String GROUP = "(Friends|Colleagues|Siblings)";
     String HOME_PHONE = "^\\+?\\d*(\\(\\d{3}\\))?(\\d+-?){0,2}\\d+$";
-    String CELL_PHONE = "^\\+?\\d*(\\(\\d{3}\\))?(\\d+-?){0,2}\\d+$";
+    String CELL_PHONE_ONE = "^\\+?\\d*(\\(\\d{3}\\))?(\\d+-?){0,2}\\d+$";
+    String SECOND_CELL_TWO = "(^\\+?\\d*(\\(\\d{3}\\))?(\\d+-?){0,2}\\d+)?$";
     String EMAIL = "^([\\w!#$%&'*+\\-/=?^`{|}~]+\\.)*[\\w!#$%&'*+\\-/=?^`{|}~]+@([A-Za-z0-9]+\\-)*[A-Za-z0-9]+\\.(com|ua|net|ru)$";
     String SKYPE = "^([A-Za-zА-Яа-я'іІїЇ]+[0-9-_\\.])*[A-Za-zА-Яа-я'іІїЇ]+[0-9]*$";
     String INDEX = "^\\d+$";

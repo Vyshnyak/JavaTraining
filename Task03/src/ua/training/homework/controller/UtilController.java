@@ -42,7 +42,7 @@ public class UtilController {
      *                  from the console
      *
      * @throws IOException
-     *         if input stream was lost
+     *         If an I/O error occurs
      */
     String inputString(String message, String regex) throws IOException {
         String result;
@@ -68,7 +68,7 @@ public class UtilController {
      *                  from the console
      *
      * @throws IOException
-     *         if input stream was lost
+     *         If an I/O error occurs
      */
     int inputMenuNumber(String message, int border) throws IOException {
         int result;
@@ -103,7 +103,7 @@ public class UtilController {
      *                   input from the console
      *
      * @throws IOException
-     *         if input stream was lost
+     *         If an I/O error occurs
      */
     private int inputNoteNumber(String menuType) throws IOException {
         view.printMenu(model.getNotesMenu(),
@@ -131,7 +131,8 @@ public class UtilController {
                 inputString(View.bundle.getString(Constants.COMMENT), RegExp.COMMENT),
                 Group.valueOf(inputString(View.bundle.getString(Constants.GROUP), RegExp.GROUP)),
                 inputString(View.bundle.getString(Constants.HOME_PHONE), RegExp.HOME_PHONE),
-                inputString(View.bundle.getString(Constants.CELL_PHONE), RegExp.CELL_PHONE),
+                inputString(View.bundle.getString(Constants.CELL_PHONE_ONE), RegExp.CELL_PHONE_ONE),
+                inputString(View.bundle.getString(Constants.CELL_PHONE_TWO), RegExp.SECOND_CELL_TWO),
                 inputString(View.bundle.getString(Constants.EMAIL), RegExp.EMAIL),
                 inputString(View.bundle.getString(Constants.SKYPE), RegExp.SKYPE),
                 new Address(inputString(View.bundle.getString(Constants.INDEX), RegExp.INDEX),
@@ -148,7 +149,7 @@ public class UtilController {
      *         if cloning is not supported
      *
      * @throws IOException
-     *         if input stream was lost
+     *         If an I/O error occurs
      */
     void readNote() throws CloneNotSupportedException, IOException {
         int noteNumber;
@@ -172,10 +173,10 @@ public class UtilController {
      * save changes or no.
      *
      * @throws CloneNotSupportedException
-     *         if cloning is not supported.
+     *         if cloning is not supported
      *
      * @throws IOException
-     *         if input stream was lost.
+     *         If an I/O error occurs
      */
     void updateNote() throws CloneNotSupportedException, IOException {
         int noteNumber;
@@ -230,7 +231,11 @@ public class UtilController {
                         break;
                     case Constants.CELL_PHONE_INDEX:
                         note.setCellPhone(inputString(
-                                View.bundle.getString(Constants.CELL_PHONE), RegExp.CELL_PHONE));
+                                View.bundle.getString(Constants.CELL_PHONE_ONE), RegExp.CELL_PHONE_ONE));
+                        break;
+                    case Constants.SECOND_CELL_PHONE_INDEX:
+                        note.setSecondCellPhone(inputString(
+                                View.bundle.getString(Constants.CELL_PHONE_TWO), RegExp.SECOND_CELL_TWO));
                         break;
                     case Constants.EMAIL_INDEX:
                         note.setEmail(inputString(
@@ -263,7 +268,7 @@ public class UtilController {
      * Deletes note which user entered index of.
      *
      * @throws IOException
-     *         if input stream was lost
+     *         If an I/O error occurs
      */
     void deleteNote() throws IOException {
         int noteNumber;
@@ -285,7 +290,7 @@ public class UtilController {
      *                       it's 'no'
      *
      * @throws IOException
-     *         if input stream was lost
+     *         If an I/O error occurs
      */
     private boolean isConfirmed(String confirmation) throws IOException {
         return inputString(
