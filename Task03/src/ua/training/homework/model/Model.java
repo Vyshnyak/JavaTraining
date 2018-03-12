@@ -47,7 +47,7 @@ public class Model {
     /**
      * Returns the note from the list at the given index
      *
-     * @param  index  an absolute URL giving the base location of the image
+     * @param  index  an index of the note in the list that will be returned
      *
      * @return        the note that locates in list under the given index
      *

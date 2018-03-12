@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Note bean that consists of the multiple fields represented
+ * Note entity that consists of the multiple fields represented
  * as person's information
  */
 public class Note implements Cloneable {
@@ -52,29 +52,14 @@ public class Note implements Cloneable {
         this.lastChangeDate = additionDate;
     }
 
-    /**
-     * Sets the last name information to the corresponding note field
-     *
-     * @param  lastName  a last name of the person to be put in the note field
-     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    /**
-     * Sets the first name information to the corresponding note field
-     *
-     * @param  firstName  a first name of the person to be put in the note field
-     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    /**
-     * Sets the middle name information to the corresponding note field
-     *
-     * @param  middleName  a middle name of the person to be put in the note field
-     */
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
@@ -100,83 +85,38 @@ public class Note implements Cloneable {
                 Constants.DOT;
     }
 
-    /**
-     * Sets a nickname information to the corresponding field
-     *
-     * @param  nickname  a nickname of the person to be put in the note field
-     */
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
 
-    /**
-     * Sets a comment about corresponding note
-     *
-     * @param  comment  a comment about a note to be put in the note field
-     */
     public void setComment(String comment) {
         this.comment = comment;
     }
 
-    /**
-     * Sets group information to the corresponding note field
-     *
-     * @param  group  a group to be put in the note field
-     */
     public void setGroup(Group group) {
         this.group = group;
     }
 
-    /**
-     * Sets home phone information to the corresponding field
-     *
-     * @param  homePhone  a home phone of the person to be put in the note field
-     */
     public void setHomePhone(String homePhone) {
         this.homePhone = homePhone;
     }
 
-    /**
-     * Sets a cell phone information to the corresponding note field
-     *
-     * @param  cellPhone  a person's cell phone to be put in the note field
-     */
     public void setCellPhone(String cellPhone) {
         this.cellPhone = cellPhone;
     }
 
-    /**
-     * Sets an additional cell phone information to the corresponding note field
-     *
-     * @param  secondCellPhone  a person's cell phone to be put in the note field
-     */
     public void setSecondCellPhone(String secondCellPhone) {
         this.secondCellPhone = secondCellPhone;
     }
 
-    /**
-     * Sets an email information to the corresponding note field
-     *
-     * @param  email  a person's email to be put in the note field
-     */
     public void setEmail(String email) {
         this.email = email;
     }
 
-    /**
-     * Sets the skype name information to the corresponding note field
-     *
-     * @param  skype  a person's skype to be put in the note field
-     */
     public void setSkype(String skype) {
         this.skype = skype;
     }
 
-    /**
-     * Sets the person's address information to the corresponding note field
-     *
-     * @param  address  a person's address to be put in the note field
-     */
     public void setAddress(Address address) {
         this.address = address;
     }
@@ -189,24 +129,10 @@ public class Note implements Cloneable {
         fullAddress = address.toString();
     }
 
-    /**
-     * Sets the date of the last note's modifying
-     *
-     * @param  lastChangeDate  a date of the last note change to be put in t
-     *                         he note field
-     */
     public void setLastChangeDate(Date lastChangeDate) {
         this.lastChangeDate = lastChangeDate;
     }
 
-    /**
-     * Clones this note object so it can't be change out from the class area
-     *
-     * @return  the clone of the note object from which this method was called
-     *
-     * @throws CloneNotSupportedException
-     *         if cloning is not supported
-     */
     @Override
     public Note clone() throws CloneNotSupportedException {
         return (Note) super.clone();

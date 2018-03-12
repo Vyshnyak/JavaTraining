@@ -12,8 +12,8 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * Controller service object that helps controller to process
- * user's inputs and doing corresponding actions with notebook
+ * Controller service that helps controller to process
+ * user's inputs and do corresponding actions with notebook
  * such as creating, reading, updating, deleting notes.
  */
 public class UtilController {
