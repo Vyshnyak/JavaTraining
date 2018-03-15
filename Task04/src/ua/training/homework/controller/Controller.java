@@ -30,16 +30,16 @@ public class Controller {
         view.printMenu(model.getFirstFraction().toString(), model.getSecondFraction().toString());
         Operation operation = getOperationFromUser(util);
         switch (operation) {
-            case ADDING:
+            case ADDITION:
                 model.add();
                 break;
             case SUBTRACTION:
                 model.subtract();
                 break;
-            case MULTIPLYING:
+            case MULTIPLICATION:
                 model.multiply();
                 break;
-            case DIVIDING:
+            case DIVISION:
                 model.divide();
                 break;
         }
@@ -48,7 +48,7 @@ public class Controller {
 
     private Operation getOperationFromUser(UtilController util) {
         int operationNumber = Integer.parseInt(
-                util.getInputFromUser(Constants.INPUT_OPERATION, RegExp.Operation));
+                util.getInputFromUser(Constants.INPUT_OPERATION, RegExp.OPERATION_NUMBER));
         return Operation.values()[--operationNumber];
     }
 

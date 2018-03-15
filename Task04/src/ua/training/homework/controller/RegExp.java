@@ -6,5 +6,5 @@ package ua.training.homework.controller;
  */
 public interface RegExp {
     String FRACTION = "[-]?\\d+/[-]?\\d+";
-    String Operation = "[1-4]";
+    String OPERATION_NUMBER = "[1-4]";
 }

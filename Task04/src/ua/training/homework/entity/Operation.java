@@ -5,8 +5,9 @@ package ua.training.homework.entity;
  * 14.03.2018
  */
 public enum Operation {
-    ADDING("+"), SUBTRACTION("-"), MULTIPLYING("*"), DIVIDING("/");
-    String operation;
+    ADDITION("+"), SUBTRACTION("-"), MULTIPLICATION("*"), DIVISION("/");
+
+    private String operation;
 
     Operation(String operation) {
         this.operation = operation;
