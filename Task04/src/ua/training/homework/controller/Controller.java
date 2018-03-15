@@ -28,8 +28,7 @@ public class Controller {
         model.setFirstFraction(getFractionFromUser(util, Constants.INPUT_FIRST_FRACTION));
         model.setSecondFraction(getFractionFromUser(util, Constants.INPUT_SECOND_FRACTION));
         view.printMenu(model.getFirstFraction().toString(), model.getSecondFraction().toString());
-        Operation operation = getOperationFromUser(
-                Integer.parseInt(util.getInputFromUser(Constants.INPUT_OPERATION, RegExp.Operation)));
+        Operation operation = getOperationFromUser(util);
         switch (operation) {
             case ADDING:
                 model.add();
@@ -47,7 +46,9 @@ public class Controller {
         view.printMessage(model.getExpressionResult(operation));
     }
 
-    private Operation getOperationFromUser(int operationNumber) {
+    private Operation getOperationFromUser(UtilController util) {
+        int operationNumber = Integer.parseInt(
+                util.getInputFromUser(Constants.INPUT_OPERATION, RegExp.Operation));
         return Operation.values()[--operationNumber];
     }
 
@@ -58,7 +59,8 @@ public class Controller {
                 String[] fraction = utilController
                         .getInputFromUser(message, RegExp.FRACTION)
                         .split(Constants.FORWARD_SLASH);
-                properFraction = new ProperFraction(Integer.parseInt(fraction[Constants.NUMERATOR_INDEX]),
+                properFraction = new ProperFraction(
+                        Integer.parseInt(fraction[Constants.NUMERATOR_INDEX]),
                         Integer.parseInt(fraction[Constants.DENOMINATOR_INDEX]));
                 break;
             } catch (IllegalArgumentException e) {
