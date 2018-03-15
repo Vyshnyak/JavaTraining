@@ -1,4 +1,4 @@
-package ua.training.homework.bean;
+package ua.training.homework.entity;
 
 import ua.training.homework.view.Constants;
 import ua.training.homework.view.View;

@@ -1,8 +1,8 @@
 package ua.training.homework.controller;
 
-import ua.training.homework.bean.Address;
-import ua.training.homework.bean.Group;
-import ua.training.homework.bean.Note;
+import ua.training.homework.entity.Address;
+import ua.training.homework.entity.Group;
+import ua.training.homework.entity.Note;
 import ua.training.homework.model.Model;
 import ua.training.homework.view.Constants;
 import ua.training.homework.view.View;

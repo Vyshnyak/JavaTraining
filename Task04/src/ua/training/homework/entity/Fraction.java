@@ -58,12 +58,14 @@ public class Fraction {
 
         Fraction that = (Fraction) obj;
         return this.numerator * that.getDenominator() ==
-                this.denominator * that.getNumerator();
+                this.denominator * that.getNumerator() &&
+                this.sign.equals(that.getSign());
     }
 
     @Override
     public int hashCode() {
-        return numerator / denominator + denominator / numerator;
+        return numerator / denominator + denominator / numerator +
+                (sign == null ? 0 : sign.hashCode());
     }
 
     @Override
