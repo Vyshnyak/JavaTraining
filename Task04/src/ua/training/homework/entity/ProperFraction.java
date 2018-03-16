@@ -9,14 +9,15 @@ import ua.training.homework.view.Constants;
 public class ProperFraction extends Fraction {
     public ProperFraction(int numerator, int denominator) {
         super(numerator, denominator);
-        checkProperFraction(numerator, denominator);
+        checkFraction(numerator, denominator);
     }
 
     public ProperFraction(int denominator) {
         this(1, denominator);
     }
 
-    private void checkProperFraction(int numerator, int denominator) {
+    @Override
+    protected void checkFraction(int numerator, int denominator) {
         if (numerator >= denominator) {
             throw new IllegalArgumentException(Constants.WRONG_PROPER_FRACTION);
         }

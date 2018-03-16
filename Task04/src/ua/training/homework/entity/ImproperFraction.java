@@ -9,16 +9,17 @@ import ua.training.homework.view.Constants;
 public class ImproperFraction extends Fraction {
     public ImproperFraction(int numerator, int denominator) {
         super(numerator, denominator);
-        checkProperFraction(numerator, denominator);
+        checkFraction(numerator, denominator);
     }
 
     public ImproperFraction(int numerator) {
         this(numerator, 1);
     }
 
-    private void checkProperFraction(int numerator, int denominator) {
+    @Override
+    protected void checkFraction(int numerator, int denominator) {
         if (numerator < denominator) {
-            throw new IllegalArgumentException(Constants.WRONG_INPROPER_FRACTION);
+            throw new IllegalArgumentException(Constants.WRONG_IMPROPER_FRACTION);
         }
     }
 }

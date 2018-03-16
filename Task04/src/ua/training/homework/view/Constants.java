@@ -25,9 +25,7 @@ public interface Constants {
     String INPUT_OPERATION = "Input operation number: ";
 
     String WRONG_INPUT = "Wrong input! try again!";
-    String WRONG_FRACTION_INPUT = "Wrong fraction! Fraction should like [sign numerator/denominator]!";
-    String WRONG_OPERATION_INPUT = "Wrong OPERATION_NUMBER! OPERATION_NUMBER number should be in range 1-4!";
-    String WRONG_FRACTION = "Wrong fraction! numerator can't be zero!";
+    String WRONG_FRACTION = "Wrong fraction! numerator and denominator can't be zero!";
     String WRONG_PROPER_FRACTION = "Wrong proper fraction! numerator should be smaller than denominator!";
-    String WRONG_INPROPER_FRACTION = "Wrong inproper fraction! numerator should be equal to or bigger than denominator!";
+    String WRONG_IMPROPER_FRACTION = "Wrong inproper fraction! numerator should be equal to or bigger than denominator!";
 }

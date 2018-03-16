@@ -12,7 +12,7 @@ public class Fraction {
     private String sign;
 
     public Fraction(int numerator, int denominator) {
-        checkFraction(denominator);
+        checkFraction(numerator, denominator);
         this.numerator = Math.abs(numerator);
         this.denominator = Math.abs(denominator);
         this.sign = numerator < Constants.ZERO || denominator < Constants.ZERO ?
@@ -31,8 +31,8 @@ public class Fraction {
         return sign;
     }
 
-    private void checkFraction(int denominator) {
-        if (denominator == Constants.ZERO) {
+    protected void checkFraction(int numerator, int denominator) {
+        if (numerator == Constants.ZERO || denominator == Constants.ZERO) {
             throw new IllegalArgumentException(Constants.WRONG_FRACTION);
         }
     }
