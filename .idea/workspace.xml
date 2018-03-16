@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43b53bc4-56d6-4bde-9d50-73e5d1e3303b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task04/src/ua/training/homework/controller/Controller.java" afterPath="$PROJECT_DIR$/Task04/src/ua/training/homework/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task04/src/ua/training/homework/controller/RegExp.java" afterPath="$PROJECT_DIR$/Task04/src/ua/training/homework/controller/RegExp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Operation.java" afterPath="$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Operation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task04/src/ua/training/homework/view/Constants.java" afterPath="$PROJECT_DIR$/Task04/src/ua/training/homework/view/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Fraction.java" afterPath="$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Fraction.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImproperFraction.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImproperFraction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/entity/ImproperFraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="255">
               <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="e#368#369#0" expanded="true" />
@@ -74,10 +70,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fraction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Fraction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="848">
               <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -176,10 +182,10 @@
         <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/view/Constants.java" />
         <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/Main.java" />
         <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/controller/UtilController.java" />
-        <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Fraction.java" />
         <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/controller/Controller.java" />
         <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/controller/RegExp.java" />
         <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Operation.java" />
+        <option value="$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Fraction.java" />
       </list>
     </option>
   </component>
@@ -210,9 +216,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,11 +226,56 @@
               <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="Task04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="Task04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="Task04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="Task04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="Task04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="Task04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -532,11 +583,12 @@
       <workItem from="1521155485643" duration="184000" />
       <workItem from="1521155833192" duration="45000" />
       <workItem from="1521155890966" duration="99000" />
+      <workItem from="1521203276029" duration="227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143973000" />
+    <option name="totallyTimeSpent" value="144200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,7 +616,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28624734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28944564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -936,29 +988,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Fraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/entity/ImproperFraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/controller/RegExp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -970,12 +1014,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/controller/Controller.java">
+    <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/entity/Fraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task04/src/ua/training/homework/entity/ImproperFraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
           </folding>
         </state>
       </provider>

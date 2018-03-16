@@ -38,8 +38,8 @@ public class Fraction {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Fraction clone() throws CloneNotSupportedException {
+        return (Fraction) super.clone();
     }
 
     @Override
