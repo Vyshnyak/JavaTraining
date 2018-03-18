@@ -15,13 +15,4 @@ public class Model {
     public void addNote(Note note) {
         notes.add(note);
     }
-
-    public boolean containsLogin(String login) {
-        for (Note note : notes) {
-            if (note.getLogin().equals(login)) {
-                return true;
-            }
-        }
-        return false;
-    }
 }

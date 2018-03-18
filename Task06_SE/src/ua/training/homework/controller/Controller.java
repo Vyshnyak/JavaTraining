@@ -8,10 +8,10 @@ import ua.training.homework.view.View;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 import static ua.training.homework.controller.RegExp.REGEX_LOGIN;
 import static ua.training.homework.view.Constants.LOGIN;
+import static ua.training.homework.view.Constants.NOTE_ADDED;
 
 /**
  * Максим
@@ -34,11 +34,11 @@ public class Controller {
         while (true) {
             try {
                 model.addNote(new Note(inputNoteChecker.getFirstName(), inputNoteChecker.getLogin()));
-                view.printMessage("Note is added to notebook!");
+                view.printMessage(View.bundle.getString(NOTE_ADDED));
                 break;
             } catch (LoginIsNotUniqueException e) {
                 view.printMessage(String.format(e.getMessage(), e.getLogin()));
-                inputNoteChecker.setLogin(utilityController.inputStringValueWithScanner(LOGIN, REGEX_LOGIN));
+                inputNoteChecker.setLogin(utilityController.inputStringValue(LOGIN, REGEX_LOGIN));
             }
         }
     }

@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 import static ua.training.homework.view.Constants.INPUT_STRING_DATA;
+import static ua.training.homework.view.Constants.NEW_LINE;
 import static ua.training.homework.view.Constants.WRONG_INPUT_DATA;
 
 /**
@@ -27,6 +28,15 @@ public class View {
     public void printMessage(String message){
         System.out.println(message);
     }
+
+    /**
+     *
+     * @param message
+     */
+    public void printInputMessage(String message){
+        System.out.print(message);
+    }
+
     /**
      *
      * @param message
@@ -41,14 +51,15 @@ public class View {
     }
 
     public void printStringInput(String message) {
-        printMessage(concatenationString(
+        printInputMessage(concatenationString(
                 bundle.getString(INPUT_STRING_DATA),
                 bundle.getString(message)));
     }
 
     public void printWrongStringInput(String message) {
-        printMessage(concatenationString(
+        printInputMessage(concatenationString(
                 bundle.getString(WRONG_INPUT_DATA),
+                NEW_LINE,
                 bundle.getString(INPUT_STRING_DATA),
                 bundle.getString(message)));
     }

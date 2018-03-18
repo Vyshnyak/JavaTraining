@@ -5,6 +5,7 @@ package ua.training.homework.view;
  * 16.03.2018
  */
 public interface Constants {
+    String NEW_LINE = "\n";
     String INPUT_STRING_DATA = "input.string.data";
     String FIRST_NAME = "input.first.name.data";
     String LOGIN = "input.login.data";

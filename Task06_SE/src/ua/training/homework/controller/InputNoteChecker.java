@@ -2,9 +2,7 @@ package ua.training.homework.controller;
 
 import ua.training.homework.view.View;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 import static ua.training.homework.controller.RegExp.*;
 import static ua.training.homework.view.Constants.*;
@@ -42,7 +40,7 @@ public class InputNoteChecker {
     }
 
     public void inputNote() throws IOException {
-        this.firstName = utilityController.inputStringValueWithScanner(FIRST_NAME, View.bundle.getString(REGEX_NAME));
-        this.login = utilityController.inputStringValueWithScanner(LOGIN, REGEX_LOGIN);
+        this.firstName = utilityController.inputStringValue(FIRST_NAME, View.bundle.getString(REGEX_NAME));
+        this.login = utilityController.inputStringValue(LOGIN, REGEX_LOGIN);
     }
 }

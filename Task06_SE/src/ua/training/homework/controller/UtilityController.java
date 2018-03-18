@@ -19,7 +19,7 @@ public class UtilityController {
         this.view = view;
     }
 
-    String inputStringValueWithScanner(String message, String regex) throws IOException {
+    String inputStringValue(String message, String regex) throws IOException {
         String res;
         view.printStringInput(message);
         while(!(res = reader.readLine()).matches(regex)) {
