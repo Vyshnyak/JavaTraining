@@ -1,6 +1,6 @@
 package ua.training.homework.model;
 
-import ua.training.homework.entity.Note;
+import ua.training.homework.model.entity.Note;
 import ua.training.homework.view.View;
 
 import java.util.ArrayList;

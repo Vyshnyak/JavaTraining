@@ -1,6 +1,6 @@
 package ua.training.homework.view;
 
-import ua.training.homework.entity.Operation;
+import ua.training.homework.model.entity.Operation;
 
 /**
  * Максим

@@ -1,8 +1,8 @@
 package ua.training.homework.controller;
 
-import ua.training.homework.entity.Fraction;
-import ua.training.homework.entity.Operation;
-import ua.training.homework.entity.ProperFraction;
+import ua.training.homework.model.entity.Fraction;
+import ua.training.homework.model.entity.Operation;
+import ua.training.homework.model.entity.ProperFraction;
 import ua.training.homework.model.Model;
 import ua.training.homework.view.Constants;
 import ua.training.homework.view.View;

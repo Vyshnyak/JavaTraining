@@ -1,7 +1,7 @@
 package ua.training.homework.model;
 
-import ua.training.homework.entity.Fraction;
-import ua.training.homework.entity.Operation;
+import ua.training.homework.model.entity.Fraction;
+import ua.training.homework.model.entity.Operation;
 import ua.training.homework.view.Constants;
 
 /**
