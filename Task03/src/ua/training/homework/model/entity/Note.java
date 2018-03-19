@@ -64,12 +64,6 @@ public class Note implements Cloneable {
         this.middleName = middleName;
     }
 
-    /**
-     * Returns a full name information that is consisting of the last name
-     * and the first letter of the first name
-     *
-     * @return  the string of a full name (last name + firs letter of the name)
-     */
     public String getFullName() {
         return fullName;
     }

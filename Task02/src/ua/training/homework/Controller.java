@@ -55,7 +55,8 @@ public class Controller {
     }
 
     private int getNumberWithRange(Scanner scanner) {
-        view.printMessage(View.INPUT_NUMBER + model.getLowerBound() + " - " + model.getUpperBound());
+        view.printMessage(View.INPUT_NUMBER +
+                model.getLowerBound() + " - " + model.getUpperBound());
         int number;
         while (true) {
             while (!scanner.hasNextInt()) {
@@ -66,7 +67,8 @@ public class Controller {
             if (isNumberInRange(number)) {
                 break;
             } else {
-                view.printMessage(View.OUT_OF_RANGE + model.getLowerBound() + " - " + model.getUpperBound());
+                view.printMessage(View.OUT_OF_RANGE +
+                        model.getLowerBound() + " - " + model.getUpperBound());
             }
         }
         return number;

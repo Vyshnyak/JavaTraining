@@ -27,5 +27,4 @@ public interface Constants {
     String WRONG_INPUT = "Wrong input! try again!";
     String WRONG_FRACTION = "Wrong fraction! numerator and denominator can't be zero!";
     String WRONG_PROPER_FRACTION = "Wrong proper fraction! numerator should be smaller than denominator!";
-    String WRONG_IMPROPER_FRACTION = "Wrong inproper fraction! numerator should be equal to or bigger than denominator!";
 }

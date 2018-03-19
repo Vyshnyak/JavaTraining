@@ -65,6 +65,7 @@ public class Model {
     }
 
     public void addStatistic() {
-        statistic.append(String.format(STATISTIC_PATTERN, ++attemptNumber, lowerBound, upperBound, enteredNumber, actionResult));
+        statistic.append(String.format(STATISTIC_PATTERN, ++attemptNumber, lowerBound,
+                upperBound, enteredNumber, actionResult));
     }
 }

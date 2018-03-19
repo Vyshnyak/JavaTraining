@@ -70,6 +70,9 @@ public class Fraction {
 
     @Override
     public String toString() {
-        return sign + numerator + Constants.FORWARD_SLASH + denominator;
+        return sign +
+                numerator +
+                Constants.FORWARD_SLASH +
+                denominator;
     }
 }
