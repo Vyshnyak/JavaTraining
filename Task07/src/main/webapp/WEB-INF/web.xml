@@ -1,0 +1,41 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>RegistrationPageServlet</servlet-name>
+    <servlet-class>ua.training.homework.servlets.UserRegistrationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegistrationPageServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <servlet-class>ua.training.homework.servlets.WelcomePageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>DataFilter</filter-name>
+    <filter-class>ua.training.homework.filters.DataFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>DataFilter</filter-name>
+    <url-pattern>/register</url-pattern>
+  </filter-mapping>
+
+</web-app>

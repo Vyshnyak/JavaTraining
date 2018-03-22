@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:45:06 +0200] "GET / HTTP/1.1" 200 520 http-bio-8888-exec-1 645
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:45:07 +0200] "GET /favicon.ico HTTP/1.1" 200 520 http-bio-8888-exec-4 1
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:45:08 +0200] "POST /register HTTP/1.1" 200 517 http-bio-8888-exec-5 2
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:45:08 +0200] "GET /favicon.ico HTTP/1.1" 200 520 http-bio-8888-exec-6 0
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:55:13 +0200] "GET / HTTP/1.1" 200 520 http-bio-8888-exec-1 59
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:55:14 +0200] "GET /favicon.ico HTTP/1.1" 200 520 http-bio-8888-exec-4 1
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:55:15 +0200] "POST /register HTTP/1.1" 200 517 http-bio-8888-exec-5 16
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:55:15 +0200] "GET /favicon.ico HTTP/1.1" 200 520 http-bio-8888-exec-6 1
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:55:23 +0200] "POST /register HTTP/1.1" 200 548 http-bio-8888-exec-7 2
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:15:55:23 +0200] "GET /favicon.ico HTTP/1.1" 200 520 http-bio-8888-exec-8 0
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:21:05:38 +0200] "GET / HTTP/1.1" 200 556 http-bio-8888-exec-1 749
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:21:05:39 +0200] "GET /favicon.ico HTTP/1.1" 200 556 http-bio-8888-exec-4 0
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:21:05:46 +0200] "POST /register HTTP/1.1" 200 584 http-bio-8888-exec-5 3
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:21:05:46 +0200] "GET /favicon.ico HTTP/1.1" 200 556 http-bio-8888-exec-6 1
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:21:05:53 +0200] "POST /register HTTP/1.1" 200 161 http-bio-8888-exec-7 52
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:21:05:54 +0200] "GET /favicon.ico HTTP/1.1" 200 556 http-bio-8888-exec-8 1
+0:0:0:0:0:0:0:1 - - [22/Mar/2018:21:06:04 +0200] "GET /favicon.ico HTTP/1.1" 200 556 http-bio-8888-exec-9 1

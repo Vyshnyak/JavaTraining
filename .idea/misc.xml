@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/Task06_EE" />
+    <file type="web" url="file://$PROJECT_DIR$/Task07" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Task06/pom.xml" />
+        <option value="$PROJECT_DIR$/Task07/pom.xml" />
+        <option value="$PROJECT_DIR$/Task08/pom.xml" />
       </list>
     </option>
   </component>

@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Task06_EE" />
+          <element id="module-output" name="Task07" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
@@ -12,9 +12,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/Task06_EE/target/Task06_EE/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/Task07/target/Task06_EE/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="Task06_EE/web/Web" />
+      <element id="javaee-facet-resources" facet="Task07/web/Web" />
     </root>
   </artifact>
 </component>
