@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ua.training.homework</groupId>
-    <artifactId>Task08</artifactId>
+    <artifactId>Task09</artifactId>
     <version>1.0-SNAPSHOT</version>
+
 
     <dependencies>
         <dependency>
@@ -23,7 +24,7 @@
     </dependencies>
 
     <build>
-        <finalName>Task08</finalName>
+        <finalName>Task09</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -36,5 +37,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
