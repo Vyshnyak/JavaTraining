@@ -12,7 +12,7 @@
             <label><input type="text" name="name"></label> [A-Z][a-z]{1,20}<br>
             <label>Login: </label>
             <label><input type="text" name="login"></label> [A-Za-z0-9_]{1,20}<br>
-            <input type="submit" value="Ok" name="Ok"><br>
+            <input type="submit" name="Ok"><br>
         </form>
     </body>
 </html>
