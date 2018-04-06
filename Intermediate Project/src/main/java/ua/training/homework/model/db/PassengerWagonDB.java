@@ -1,40 +1,34 @@
 package ua.training.homework.model.db;
 
-import ua.training.homework.model.entity.wagons.PassengerWagon.WagonType;
+import ua.training.homework.model.entity.wagons.PassengerWagonType;
 
-import static ua.training.homework.model.entity.wagons.PassengerWagon.WagonType.*;
+import static ua.training.homework.model.entity.wagons.PassengerWagonType.*;
 
 /**
  * Максим
  * 31.03.2018
  */
 public enum PassengerWagonDB {
-    WAGON_1(42, PLATZCART), WAGON_2(48, PLATZCART), WAGON_3(49, PLATZCART),
-    WAGON_4(45, PLATZCART), WAGON_5(50, PLATZCART), WAGON_6(53, PLATZCART),
-    WAGON_7(47, PLATZCART), WAGON_8(48, PLATZCART), WAGON_9(51, PLATZCART),
-    WAGON_10(30, COUPE), WAGON_11(27, COUPE),
-    WAGON_12(29, COUPE), WAGON_13(22, COUPE),
-    WAGON_14(20, SV), WAGON_15(19, SV);
+    WAGON_1(PLATZCART), WAGON_2(PLATZCART), WAGON_3(PLATZCART),
+    WAGON_4(PLATZCART), WAGON_5(PLATZCART), WAGON_6(PLATZCART),
+    WAGON_7(PLATZCART), WAGON_8(PLATZCART), WAGON_9(PLATZCART),
+    WAGON_10(COUPE), WAGON_11(COUPE),
+    WAGON_12(COUPE), WAGON_13(COUPE),
+    WAGON_14(SV), WAGON_15(SV);
 
-    private int occupiedSeats;
     private int amountOfSeats;
-    private WagonType comfortLevel;
+    private PassengerWagonType wagonType;
 
-    PassengerWagonDB(int occupiedSeats, WagonType comfortLevel) {
-        this.occupiedSeats = occupiedSeats;
-        this.comfortLevel = comfortLevel;
-        this.amountOfSeats = comfortLevel.getAmountOfSeats();
-    }
-
-    public int getOccupiedSeats() {
-        return occupiedSeats;
+    PassengerWagonDB(PassengerWagonType wagonType) {
+        this.wagonType = wagonType;
+        this.amountOfSeats = wagonType.getCapacity();
     }
 
     public int getAmountOfSeats() {
         return amountOfSeats;
     }
 
-    public WagonType getComfortLevel() {
-        return comfortLevel;
+    public PassengerWagonType getWagonType() {
+        return wagonType;
     }
 }

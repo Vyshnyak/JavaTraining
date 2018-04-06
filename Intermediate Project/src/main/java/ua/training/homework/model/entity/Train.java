@@ -1,10 +1,6 @@
 package ua.training.homework.model.entity;
 
 import ua.training.homework.model.entity.locomotives.Locomotive;
-import ua.training.homework.model.entity.wagons.Wagon;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Максим
@@ -12,7 +8,6 @@ import java.util.List;
  */
 public abstract class Train {
     private Locomotive locomotive;
-    private List<Wagon> wagons = new ArrayList<>();
 
     public Locomotive getLocomotive() {
         return locomotive;
@@ -22,52 +17,22 @@ public abstract class Train {
         this.locomotive = locomotive;
     }
 
-    public List<Wagon> getWagons() {
-        return wagons;
-    }
-
-    public void setWagons(List<Wagon> wagons) {
-        this.wagons = wagons;
-    }
-
-    public void addWagon(Wagon wagon) {
-        wagons.add(wagon);
-    }
-
-    public void addWagon(int index, Wagon wagon) {
-        wagons.add(index, wagon);
-    }
-
-    public void removeWagon(int index) {
-        wagons.remove(index);
-    }
-
-    public void removeWagon(Wagon wagon) {
-        wagons.remove(wagon);
-    }
-
-    public abstract String drawTrain();
-
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
+    public boolean equals(Object o) {
+        if (this == o) {
             return true;
         }
-
-        if (obj == null || getClass() != obj.getClass()) {
+        if (o == null || getClass() != o.getClass()) {
             return false;
         }
 
-        Train that = (Train) obj;
+        Train train = (Train) o;
 
-        return locomotive != null ? locomotive.equals(that.locomotive) : that.locomotive == null &&
-                wagons != null ? wagons.equals(that.wagons) : that.wagons == null;
+        return locomotive != null ? locomotive.equals(train.locomotive) : train.locomotive == null;
     }
 
     @Override
     public int hashCode() {
-        int result = locomotive != null ? locomotive.hashCode() : 0;
-        result = 31 * result + (wagons != null ? wagons.hashCode() : 0);
-        return result;
+        return locomotive != null ? locomotive.hashCode() : 0;
     }
 }

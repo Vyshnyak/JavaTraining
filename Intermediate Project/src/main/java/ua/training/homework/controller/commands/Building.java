@@ -3,6 +3,9 @@ package ua.training.homework.controller.commands;
 import ua.training.homework.model.services.PassengerTrainService;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import static ua.training.homework.controller.constants.Constants.*;
 
 /**
  * Максим
@@ -13,7 +16,9 @@ public class Building implements Command {
     public String execute(HttpServletRequest request) {
         PassengerTrainService service = new PassengerTrainService();
         service.buildPassengerTrain();
-        request.setAttribute("train", PassengerTrainService.model.getTrain().drawTrain());
-        return "/WEB-INF/view/menu.jsp";
+        HttpSession session = request.getSession();
+        session.setAttribute(ATTRIBUTE_TRAIN_TYPE, PASSENGER_TRAIN_TITLE);
+        session.setAttribute(ATTRIBUTE_TRAIN, PassengerTrainService.model.getTrain());
+        return PAGE_MENU;
     }
 }

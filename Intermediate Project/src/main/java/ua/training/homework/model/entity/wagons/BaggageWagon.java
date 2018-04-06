@@ -5,47 +5,54 @@ package ua.training.homework.model.entity.wagons;
  * 31.03.2018
  */
 public class BaggageWagon extends Wagon {
-    private int loadCapacity;
-    private int loadAmount;
+    private double weightCapacity;
+    private double weightOccupancy;
 
-    public BaggageWagon(int loadCapacity, int loadAmount) {
-        this.loadCapacity = loadCapacity;
-        this.loadAmount = loadAmount;
+    public BaggageWagon(PassengerWagonType wagonType) {
+        super(wagonType);
+        this.weightCapacity = wagonType.getCapacity();
     }
 
-    public int getLoadCapacity() {
-        return loadCapacity;
+    public double getWeightCapacity() {
+        return weightCapacity;
     }
 
-    public int getLoadAmount() {
-        return loadAmount;
+    public void setWeightCapacity(double weightCapacity) {
+        this.weightCapacity = weightCapacity;
+    }
+
+    public double getWeightOccupancy() {
+        return weightOccupancy;
+    }
+
+    public void setWeightOccupancy(double weightOccupancy) {
+        this.weightOccupancy = weightOccupancy;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
+        BaggageWagon wagon = (BaggageWagon) o;
 
-        BaggageWagon that = (BaggageWagon) obj;
-
-        return loadCapacity == that.loadCapacity &&
-                loadAmount == that.loadAmount;
+        if (Double.compare(wagon.weightCapacity, weightCapacity) != 0) return false;
+        return Double.compare(wagon.weightOccupancy, weightOccupancy) == 0;
     }
 
     @Override
     public int hashCode() {
-        int result = loadCapacity;
-        result = 31 * result + loadAmount;
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(weightCapacity);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(weightOccupancy);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 
     @Override
     public String toString() {
-        return String.format("{B %d/%d}", loadAmount, loadCapacity);
+        return String.format("{B %.2f/%.2f}", weightOccupancy, weightCapacity);
     }
 }

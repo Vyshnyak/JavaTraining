@@ -5,81 +5,50 @@ package ua.training.homework.model.entity.wagons;
  * 30.03.2018
  */
 public class PassengerWagon extends Wagon {
-    public enum WagonType {
-        PLATZCART(54, "P", 3), COUPE(36, "C", 2), SV(21, "SV", 1);
+    private int seatsCapacity;
+    private int seatsOccupancy;
 
-        private int amountOfSeats;
-        private String name;
-        private int comfortLevel;
-
-        WagonType(int amountOfSeats, String name, int comfortLevel) {
-            this.amountOfSeats = amountOfSeats;
-            this.name = name;
-            this.comfortLevel = comfortLevel;
-        }
-
-        public int getAmountOfSeats() {
-            return amountOfSeats;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public int getComfortLevel() {
-            return comfortLevel;
-        }
+    public PassengerWagon(PassengerWagonType wagonType) {
+        super(wagonType);
+        this.seatsCapacity = wagonType.getCapacity();
     }
 
-    private int occupiedSeats;
-    private int amountOfSeats;
-    private WagonType wagonType;
-
-    public PassengerWagon(int occupiedSeats, WagonType comfortLevel) {
-        this.occupiedSeats = occupiedSeats;
-        this.amountOfSeats = comfortLevel.getAmountOfSeats();
-        this.wagonType = comfortLevel;
+    public int getSeatsCapacity() {
+        return seatsCapacity;
     }
 
-    public int getOccupiedSeats() {
-        return occupiedSeats;
+    public void setSeatsCapacity(int seatsCapacity) {
+        this.seatsCapacity = seatsCapacity;
     }
 
-    public int getAmountOfSeats() {
-        return amountOfSeats;
+    public int getSeatsOccupancy() {
+        return seatsOccupancy;
     }
 
-    public WagonType getWagonType() {
-        return wagonType;
+    public void setSeatsOccupancy(int seatsOccupancy) {
+        this.seatsOccupancy = seatsOccupancy;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
+        PassengerWagon wagon = (PassengerWagon) o;
 
-        PassengerWagon that = (PassengerWagon) obj;
-
-        return occupiedSeats == that.occupiedSeats &&
-                amountOfSeats == that.amountOfSeats &&
-                wagonType == that.wagonType;
+        if (seatsCapacity != wagon.seatsCapacity) return false;
+        return seatsOccupancy == wagon.seatsOccupancy;
     }
 
     @Override
     public int hashCode() {
-        int result = occupiedSeats;
-        result = 31 * result + amountOfSeats;
-        result = 31 * result + (wagonType != null ? wagonType.hashCode() : 0);
+        int result = seatsCapacity;
+        result = 31 * result + seatsOccupancy;
         return result;
     }
 
     @Override
     public String toString() {
-        return String.format("{%s %d/%d}", wagonType.getName(), occupiedSeats, amountOfSeats);
+        return String.format("{%s %d/%d}", super.getWagonType().getName(), seatsOccupancy, seatsCapacity);
     }
 }

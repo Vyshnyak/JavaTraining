@@ -1,9 +1,11 @@
 package ua.training.homework.controller.filters;
 
-import ua.training.homework.model.services.PassengerTrainService;
-
 import javax.servlet.*;
 import java.io.IOException;
+
+import static ua.training.homework.controller.constants.Constants.*;
+import static ua.training.homework.controller.constants.Constants.PARAMETER_START;
+import static ua.training.homework.controller.constants.RegExp.NUMBER_RANGE_REGEXP;
 
 /**
  * Максим
@@ -19,15 +21,14 @@ public class DataFormatFilter implements Filter {
     public void doFilter(ServletRequest servletRequest,
                          ServletResponse servletResponse,
                          FilterChain filterChain) throws IOException, ServletException {
-        String offset = servletRequest.getParameter("offset");
-        String end = servletRequest.getParameter("end");
+        String start = servletRequest.getParameter(PARAMETER_START);
+        String end = servletRequest.getParameter(PARAMETER_END);
 
-        if (offset.matches("[1-9]?[0-9]?") && end.matches("[1-9]?[0-9]?")) {
+        if (start.matches(NUMBER_RANGE_REGEXP) && end.matches(NUMBER_RANGE_REGEXP)) {
             filterChain.doFilter(servletRequest, servletResponse);
         } else {
-            servletRequest.setAttribute("train", PassengerTrainService.model.getTrain().drawTrain());
-            servletRequest.setAttribute("result", "wrong input format!");
-            servletRequest.getRequestDispatcher("/WEB-INF/view/menu.jsp")
+            servletRequest.setAttribute(ATTRIBUTE_RESULT, MESSAGE_WRONG_INPUT_FORMAT);
+            servletRequest.getRequestDispatcher(PAGE_MENU)
                     .forward(servletRequest, servletResponse);
         }
     }

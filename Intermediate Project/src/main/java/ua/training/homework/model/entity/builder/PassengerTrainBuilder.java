@@ -5,9 +5,11 @@ import ua.training.homework.model.entity.*;
 import ua.training.homework.model.entity.locomotives.Locomotive;
 import ua.training.homework.model.entity.wagons.BaggageWagon;
 import ua.training.homework.model.entity.wagons.PassengerWagon;
+import ua.training.homework.model.entity.wagons.PassengerWagonType;
 
 import static ua.training.homework.model.db.BaggageWagonDB.*;
 import static ua.training.homework.model.db.LocomotiveDB.*;
+import static ua.training.homework.model.entity.wagons.PassengerWagonType.*;
 
 /**
  * Максим
@@ -24,11 +26,11 @@ public class PassengerTrainBuilder extends TrainBuilder {
     @Override
     public void buildWagons() {
         for (PassengerWagonDB wagon : PassengerWagonDB.values()) {
-            passengerTrain.addWagon(
-                    new PassengerWagon(wagon.getOccupiedSeats(), wagon.getComfortLevel()));
+            passengerTrain.getPassengerWagons().add(
+                    new PassengerWagon(wagon.getWagonType()));
         }
-        passengerTrain.setBaggageWagon(
-                new BaggageWagon(BAGGAGE_WAGON_1.getLoadCapacity(), BAGGAGE_WAGON_1.getLoadAmount()));
+        passengerTrain.getBaggageWagons().add(
+                new BaggageWagon(BAGGAGE));
     }
 
     @Override
