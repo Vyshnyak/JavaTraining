@@ -1,34 +1,34 @@
 package ua.training.homework.model.db;
 
-import ua.training.homework.model.entity.wagons.PassengerWagonType;
+import ua.training.homework.model.entity.wagons.WagonType;
 
-import static ua.training.homework.model.entity.wagons.PassengerWagonType.*;
+import static ua.training.homework.model.entity.wagons.WagonType.*;
 
 /**
  * Максим
  * 31.03.2018
  */
 public enum PassengerWagonDB {
-    WAGON_1(PLATZCART), WAGON_2(PLATZCART), WAGON_3(PLATZCART),
-    WAGON_4(PLATZCART), WAGON_5(PLATZCART), WAGON_6(PLATZCART),
-    WAGON_7(PLATZCART), WAGON_8(PLATZCART), WAGON_9(PLATZCART),
-    WAGON_10(COUPE), WAGON_11(COUPE),
-    WAGON_12(COUPE), WAGON_13(COUPE),
-    WAGON_14(SV), WAGON_15(SV);
+    WAGON_1(1, PLATZCART), WAGON_2(2, PLATZCART), WAGON_3(3, PLATZCART),
+    WAGON_4(4, PLATZCART), WAGON_5(5, PLATZCART), WAGON_6(6, PLATZCART),
+    WAGON_7(7, PLATZCART), WAGON_8(8, PLATZCART), WAGON_9(9, PLATZCART),
+    WAGON_10(1, COUPE), WAGON_11(2, COUPE),
+    WAGON_12(3, COUPE), WAGON_13(4, COUPE),
+    WAGON_14(1, SV), WAGON_15(2, SV);
 
-    private int amountOfSeats;
-    private PassengerWagonType wagonType;
+    private int id;
+    private WagonType wagonType;
 
-    PassengerWagonDB(PassengerWagonType wagonType) {
+    PassengerWagonDB(int id, WagonType wagonType) {
+        this.id = id;
         this.wagonType = wagonType;
-        this.amountOfSeats = wagonType.getCapacity();
     }
 
-    public int getAmountOfSeats() {
-        return amountOfSeats;
+    public int getId() {
+        return id;
     }
 
-    public PassengerWagonType getWagonType() {
+    public WagonType getWagonType() {
         return wagonType;
     }
 }

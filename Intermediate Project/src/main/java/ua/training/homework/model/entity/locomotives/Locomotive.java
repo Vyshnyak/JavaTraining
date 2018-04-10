@@ -43,6 +43,6 @@ public class Locomotive {
 
     @Override
     public String toString() {
-        return "/_L_}";
+        return "L";
     }
 }

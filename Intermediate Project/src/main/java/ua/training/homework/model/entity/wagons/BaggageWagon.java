@@ -8,8 +8,8 @@ public class BaggageWagon extends Wagon {
     private double weightCapacity;
     private double weightOccupancy;
 
-    public BaggageWagon(PassengerWagonType wagonType) {
-        super(wagonType);
+    public BaggageWagon(int id, WagonType wagonType) {
+        super(id, wagonType);
         this.weightCapacity = wagonType.getCapacity();
     }
 
@@ -53,6 +53,6 @@ public class BaggageWagon extends Wagon {
 
     @Override
     public String toString() {
-        return String.format("{B %.2f/%.2f}", weightOccupancy, weightCapacity);
+        return String.format("%s%d | %.2f/%.2f", getWagonType().getName(), getId(), weightOccupancy, weightCapacity);
     }
 }

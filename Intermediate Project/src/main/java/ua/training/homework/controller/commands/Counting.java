@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import static ua.training.homework.controller.constants.Constants.*;
+import static ua.training.homework.TextConstants.*;
 
 /**
  * Максим
@@ -17,14 +17,11 @@ public class Counting implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         PassengerTrainService service = new PassengerTrainService();
-        ResourceBundle bundle = ResourceBundle.getBundle(BASE_NAME,
-                new Locale((String) request.getSession().getAttribute(ATTRIBUTE_LANGUAGE)));
-
         int passengers = service.countPassengers();
         double baggage = service.countBaggage();
-
-        String result = String.format(bundle.getString(PATTERN_RESULT), passengers, baggage);
-        request.setAttribute(ATTRIBUTE_RESULT, result);
+        request.setAttribute(ATTRIBUTE_PASSENGERS, passengers);
+        request.setAttribute(ATTRIBUTE_BAGGAGE, baggage);
+        request.setAttribute(ATTRIBUTE_COUNT_RESULT, PATTERN_RESULT);
         return PAGE_MENU;
     }
 }

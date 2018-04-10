@@ -1,6 +1,6 @@
 package ua.training.homework.model.entity.builder;
 
-import ua.training.homework.model.entity.Train;
+import ua.training.homework.model.entity.PassengerTrain;
 
 /**
  * Максим
@@ -9,5 +9,5 @@ import ua.training.homework.model.entity.Train;
 public abstract class TrainBuilder {
     public abstract void buildLocomotive();
     public abstract void buildWagons();
-    public abstract Train getTrain();
+    public abstract PassengerTrain getTrain();
 }

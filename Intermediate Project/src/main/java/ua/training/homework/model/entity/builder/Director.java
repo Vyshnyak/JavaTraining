@@ -1,6 +1,6 @@
 package ua.training.homework.model.entity.builder;
 
-import ua.training.homework.model.entity.Train;
+import ua.training.homework.model.entity.PassengerTrain;
 
 /**
  * Максим
@@ -13,7 +13,7 @@ public class Director {
         this.builder = builder;
     }
 
-    public Train buildTrain() {
+    public PassengerTrain buildTrain() {
         builder.buildLocomotive();
         builder.buildWagons();
         return builder.getTrain();

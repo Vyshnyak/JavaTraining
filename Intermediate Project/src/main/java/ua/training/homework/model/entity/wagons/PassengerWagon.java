@@ -8,8 +8,8 @@ public class PassengerWagon extends Wagon {
     private int seatsCapacity;
     private int seatsOccupancy;
 
-    public PassengerWagon(PassengerWagonType wagonType) {
-        super(wagonType);
+    public PassengerWagon(int id, WagonType wagonType) {
+        super(id, wagonType);
         this.seatsCapacity = wagonType.getCapacity();
     }
 
@@ -49,6 +49,6 @@ public class PassengerWagon extends Wagon {
 
     @Override
     public String toString() {
-        return String.format("{%s %d/%d}", super.getWagonType().getName(), seatsOccupancy, seatsCapacity);
+        return String.format("%s%d | %d/%d", getWagonType().getName(), getId(), seatsOccupancy, seatsCapacity);
     }
 }

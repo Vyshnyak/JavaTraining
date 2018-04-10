@@ -4,8 +4,7 @@ import ua.training.homework.model.services.PassengerTrainService;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static ua.training.homework.controller.constants.Constants.ATTRIBUTE_TRAIN;
-import static ua.training.homework.controller.constants.Constants.PAGE_MENU;
+import static ua.training.homework.TextConstants.PAGE_MENU;
 
 /**
  * Максим

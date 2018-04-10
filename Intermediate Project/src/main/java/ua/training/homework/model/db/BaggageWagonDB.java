@@ -1,30 +1,29 @@
 package ua.training.homework.model.db;
 
-import ua.training.homework.model.entity.wagons.PassengerWagonType;
+import ua.training.homework.model.entity.wagons.WagonType;
 
-import static ua.training.homework.model.entity.wagons.PassengerWagonType.BAGGAGE;
+import static ua.training.homework.model.entity.wagons.WagonType.BAGGAGE;
 
 /**
  * Максим
  * 05.04.2018
  */
 public enum BaggageWagonDB {
-    BAGGAGE_WAGON_1(BAGGAGE), BAGGAGE_WAGON_2(BAGGAGE),
-    BAGGAGE_WAGON_3(BAGGAGE), BAGGAGE_WAGON_4(BAGGAGE);
+    BAGGAGE_WAGON_1(1, BAGGAGE), BAGGAGE_WAGON_2(2, BAGGAGE),
+    BAGGAGE_WAGON_3(3, BAGGAGE), BAGGAGE_WAGON_4(4, BAGGAGE);
 
-    private double weightCapacity;
-    private PassengerWagonType wagonType;
+    private int id;
+    private WagonType wagonType;
 
-    BaggageWagonDB(PassengerWagonType wagonType) {
-        this.weightCapacity = weightCapacity;
+    BaggageWagonDB(int id, WagonType wagonType) {
+        this.id = id;
         this.wagonType = wagonType;
     }
 
-    public double getWeightCapacity() {
-        return weightCapacity;
+    public int getId() {
+        return id;
     }
-
-    public PassengerWagonType getWagonType() {
+    public WagonType getWagonType() {
         return wagonType;
     }
 }
