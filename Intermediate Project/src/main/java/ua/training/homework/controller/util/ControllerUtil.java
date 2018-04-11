@@ -2,9 +2,9 @@ package ua.training.homework.controller.util;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static ua.training.homework.RegExp.NUMBER_RANGE_REGEXP;
-import static ua.training.homework.TextConstants.PARAMETER_END;
-import static ua.training.homework.TextConstants.PARAMETER_START;
+import static ua.training.homework.constants.RegExp.NUMBER_RANGE_REGEXP;
+import static ua.training.homework.constants.TextConstants.PARAMETER_END;
+import static ua.training.homework.constants.TextConstants.PARAMETER_START;
 
 /**
  * Максим

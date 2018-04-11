@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static ua.training.homework.TextConstants.*;
+import static ua.training.homework.constants.TextConstants.*;
 
 /**
  * Максим

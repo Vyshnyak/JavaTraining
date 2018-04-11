@@ -1,16 +1,14 @@
 package ua.training.homework.model.entity.builder;
 
-import ua.training.homework.model.db.BaggageWagonDB;
 import ua.training.homework.model.db.PassengerWagonDB;
 import ua.training.homework.model.entity.*;
-import ua.training.homework.model.entity.locomotives.Locomotive;
-import ua.training.homework.model.entity.wagons.BaggageWagon;
-import ua.training.homework.model.entity.wagons.PassengerWagon;
+import ua.training.homework.model.entity.Locomotive;
+import ua.training.homework.model.entity.BaggageWagon;
+import ua.training.homework.model.entity.PassengerWagon;
 
 import static ua.training.homework.model.db.BaggageWagonDB.BAGGAGE_WAGON_1;
 import static ua.training.homework.model.db.BaggageWagonDB.BAGGAGE_WAGON_2;
 import static ua.training.homework.model.db.LocomotiveDB.*;
-import static ua.training.homework.model.entity.wagons.WagonType.*;
 
 /**
  * Максим

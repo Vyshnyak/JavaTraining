@@ -1,9 +1,5 @@
 package ua.training.homework.model.entity;
 
-import ua.training.homework.model.entity.locomotives.Locomotive;
-import ua.training.homework.model.entity.wagons.BaggageWagon;
-import ua.training.homework.model.entity.wagons.PassengerWagon;
-
 import java.util.ArrayList;
 import java.util.List;
 

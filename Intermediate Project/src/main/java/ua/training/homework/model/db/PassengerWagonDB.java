@@ -1,8 +1,8 @@
 package ua.training.homework.model.db;
 
-import ua.training.homework.model.entity.wagons.WagonType;
+import ua.training.homework.model.entity.WagonType;
 
-import static ua.training.homework.model.entity.wagons.WagonType.*;
+import static ua.training.homework.model.entity.WagonType.*;
 
 /**
  * Максим

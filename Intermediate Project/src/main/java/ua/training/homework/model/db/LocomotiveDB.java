@@ -1,6 +1,6 @@
 package ua.training.homework.model.db;
 
-import ua.training.homework.model.entity.employees.Motorman;
+import ua.training.homework.model.entity.Motorman;
 
 import static ua.training.homework.model.db.MotormanDB.*;
 

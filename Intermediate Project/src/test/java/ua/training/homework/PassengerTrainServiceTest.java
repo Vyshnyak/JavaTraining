@@ -3,7 +3,7 @@ package ua.training.homework;
 import org.junit.Before;
 import org.junit.Test;
 import ua.training.homework.model.entity.PassengerTrain;
-import ua.training.homework.model.entity.wagons.PassengerWagon;
+import ua.training.homework.model.entity.PassengerWagon;
 import ua.training.homework.model.services.PassengerTrainService;
 
 import java.util.Comparator;

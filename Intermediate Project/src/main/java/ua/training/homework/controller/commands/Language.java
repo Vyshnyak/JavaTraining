@@ -2,9 +2,9 @@ package ua.training.homework.controller.commands;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static ua.training.homework.TextConstants.*;
-import static ua.training.homework.TextConstants.ATTRIBUTE_LANGUAGE;
-import static ua.training.homework.TextConstants.PARAMETER_LOCALE;
+import static ua.training.homework.constants.TextConstants.*;
+import static ua.training.homework.constants.TextConstants.ATTRIBUTE_LANGUAGE;
+import static ua.training.homework.constants.TextConstants.PARAMETER_LOCALE;
 
 /**
  * Максим

@@ -1,10 +1,8 @@
 package ua.training.homework.model.services;
 
 import ua.training.homework.model.Model;
-import ua.training.homework.model.entity.PassengerTrain;
-import ua.training.homework.model.entity.wagons.BaggageWagon;
-import ua.training.homework.model.entity.wagons.PassengerWagon;
-import ua.training.homework.model.entity.wagons.WagonType;
+import ua.training.homework.model.entity.BaggageWagon;
+import ua.training.homework.model.entity.PassengerWagon;
 import ua.training.homework.model.entity.builder.Director;
 import ua.training.homework.model.entity.builder.PassengerTrainBuilder;
 

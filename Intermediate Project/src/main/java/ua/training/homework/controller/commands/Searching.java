@@ -1,13 +1,13 @@
 package ua.training.homework.controller.commands;
 
 import ua.training.homework.controller.util.ControllerUtil;
-import ua.training.homework.model.entity.wagons.PassengerWagon;
+import ua.training.homework.model.entity.PassengerWagon;
 import ua.training.homework.model.services.PassengerTrainService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-import static ua.training.homework.TextConstants.*;
+import static ua.training.homework.constants.TextConstants.*;
 
 /**
  * Максим
