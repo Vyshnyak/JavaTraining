@@ -5,11 +5,11 @@ package ua.training.homework.constants;
  * 02.04.2018
  */
 public interface TextConstants {
-    String COMMAND_BUILDING = "/building";
-    String COMMAND_FILLING = "/filling";
-    String COMMAND_COUNTING = "/counting";
-    String COMMAND_SORTING = "/sorting";
-    String COMMAND_SEARCHING = "/searching";
+    String COMMAND_BUILD = "/build";
+    String COMMAND_FILL = "/fill";
+    String COMMAND_COUNT = "/count";
+    String COMMAND_SORT = "/sort";
+    String COMMAND_SEARCH = "/search";
     String COMMAND_LANGUAGE = "/language";
 
     String PARAMETER_START = "start";

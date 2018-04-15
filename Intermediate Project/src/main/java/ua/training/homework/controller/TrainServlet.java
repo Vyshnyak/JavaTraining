@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 import static ua.training.homework.constants.TextConstants.*;
 
@@ -17,23 +17,35 @@ import static ua.training.homework.constants.TextConstants.*;
  * 31.03.2018
  */
 public class TrainServlet extends HttpServlet {
-    private Map<String, Command> commands = new ConcurrentHashMap<>();
+    private Map<String, Command> commands = new HashMap<>();
 
     @Override
     public void init() throws ServletException {
-        commands.put(COMMAND_BUILDING, new Building());
-        commands.put(COMMAND_FILLING, new Filling());
-        commands.put(COMMAND_COUNTING, new Counting());
-        commands.put(COMMAND_SORTING, new Sorting());
-        commands.put(COMMAND_SEARCHING, new Searching());
+        commands.put(COMMAND_BUILD, new Build());
+        commands.put(COMMAND_FILL, new Fill());
+        commands.put(COMMAND_COUNT, new Count());
+        commands.put(COMMAND_SORT, new Sort());
+        commands.put(COMMAND_SEARCH, new Search());
         commands.put(COMMAND_LANGUAGE, new Language());
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String path = req.getPathInfo();
+    public void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        processRequest(req, resp);
+    }
+
+    @Override
+    public void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        processRequest(req, resp);
+    }
+
+    private void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String path = request.getPathInfo();
         Command command = commands.get(path);
-        String page = command.execute(req);
-        req.getRequestDispatcher(page).forward(req, resp);
+        String page = command.execute(request);
+        request.getRequestDispatcher(page).forward(request, response);
     }
 }

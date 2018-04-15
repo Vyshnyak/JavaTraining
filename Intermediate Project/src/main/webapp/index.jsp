@@ -14,7 +14,7 @@
         <div align="center">
             <h2><fmt:message key="main.page.title" bundle="${lan}" /></h2>
             <br/>
-            <form method="GET" action="${pageContext.request.contextPath}/app/building">
+            <form method="GET" action="${pageContext.request.contextPath}/app/build">
                 <select name="trainType" size="1">
                     <option value="Passenger Train"> <fmt:message key="passenger.train" bundle="${lan}" /> </option>
                 </select>

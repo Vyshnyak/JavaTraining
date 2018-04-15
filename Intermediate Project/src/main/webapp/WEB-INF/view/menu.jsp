@@ -6,7 +6,7 @@
             .box {
                 border: 1px solid red;
                 padding: 5px;
-                font-size: large;
+                font-size: small;
             }
         </style>
     </head>
@@ -51,25 +51,25 @@
             </div>
             <br>
             <br>
-            <form method="GET" action="${pageContext.request.contextPath}/app/filling">
+            <form method="GET" action="${pageContext.request.contextPath}/app/fill">
                 <fmt:message key="message.command.fill" bundle="${lan}" /> <br>
                 <input type="submit" value="<fmt:message key="command.fill" bundle="${lan}" />">
             </form>
             <br>
             <br>
-            <form method="GET" action="${pageContext.request.contextPath}/app/counting">
+            <form method="GET" action="${pageContext.request.contextPath}/app/count">
                 <fmt:message key="message.command.count" bundle="${lan}" /> <br>
                 <input type="submit" value="<fmt:message key="command.count" bundle="${lan}" />">
             </form>
             <br>
             <br>
-            <form method="GET" action="${pageContext.request.contextPath}/app/sorting">
+            <form method="GET" action="${pageContext.request.contextPath}/app/sort">
                 <fmt:message key="message.command.sort" bundle="${lan}" /> <br>
                 <input type="submit" value="<fmt:message key="command.sort" bundle="${lan}" />">
             </form>
             <br>
             <br>
-            <form method="GET" action="${pageContext.request.contextPath}/app/searching">
+            <form method="GET" action="${pageContext.request.contextPath}/app/search">
                 <fmt:message key="message.command.search" bundle="${lan}" /> <br>
                 <input type="text" name="start" size="1">
                 <input type="text" name="end" size="1">

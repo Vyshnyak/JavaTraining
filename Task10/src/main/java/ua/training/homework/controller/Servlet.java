@@ -13,7 +13,7 @@ import java.sql.*;
  */
 public class Servlet extends HttpServlet {
     private final static String USER_NAME = "root";
-    private final static String PASSWORD = "M4523021m";
+    private final static String PASSWORD = "password";
     private final static String URL = "jdbc:mysql://localhost:3306/mydbtest";
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)

@@ -30,8 +30,6 @@ public class PassengerTrainBuilder extends TrainBuilder {
         }
         passengerTrain.getBaggageWagons().add(
                 new BaggageWagon(BAGGAGE_WAGON_1.getId(), BAGGAGE_WAGON_1.getWagonType()));
-        passengerTrain.getBaggageWagons().add(
-                new BaggageWagon(BAGGAGE_WAGON_2.getId(), BAGGAGE_WAGON_2.getWagonType()));
     }
 
     @Override
