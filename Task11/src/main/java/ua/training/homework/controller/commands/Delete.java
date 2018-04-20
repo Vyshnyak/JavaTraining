@@ -16,6 +16,7 @@ public class Delete implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         service.deleteNote(Integer.valueOf(request.getParameter(PARAM_ID)));
-        return URL_DELETE_MENU;
+        return URL_READ;
+        //return URL_DELETE_MENU;
     }
 }

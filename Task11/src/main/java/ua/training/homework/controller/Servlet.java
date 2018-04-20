@@ -1,9 +1,6 @@
 package ua.training.homework.controller;
 
 import ua.training.homework.controller.commands.*;
-import ua.training.homework.controller.commands.forms.UpdateForm;
-import ua.training.homework.controller.commands.menus.DeleteMenu;
-import ua.training.homework.controller.commands.menus.UpdateMenu;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -28,9 +25,6 @@ public class Servlet extends HttpServlet {
         commands.put(COMMAND_READ, new Read());
         commands.put(COMMAND_UPDATE, new Update());
         commands.put(COMMAND_DELETE, new Delete());
-        commands.put(COMMAND_UPDATE_FORM, new UpdateForm());
-        commands.put(COMMAND_UPDATE_MENU, new UpdateMenu());
-        commands.put(COMMAND_DELETE_MENU, new DeleteMenu());
     }
 
     @Override

@@ -19,6 +19,7 @@ public class Read implements Command {
     public String execute(HttpServletRequest request) {
         List<Note> notes = service.getAllNotes();
         request.setAttribute(ATTRIBUTE_NOTES, notes);
-        return PAGE_READ;
+        return PAGE_MENU;
+        //return PAGE_READ;
     }
 }

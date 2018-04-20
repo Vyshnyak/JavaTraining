@@ -28,9 +28,10 @@ public class Create implements Command {
             } catch (LoginIsNotUniqueException e) {
                 request.setAttribute(ATTRIBUTE_MESSAGE,
                         String.format(MESSAGE_LOGIN_IS_NOT_UNIQUE, e.getLogin()));
-                return PAGE_CREATE_FORM;
+                //return PAGE_CREATE_FORM;
             }
         }
-        return PAGE_INDEX;
+        return URL_READ;
+        //return PAGE_INDEX;
     }
 }

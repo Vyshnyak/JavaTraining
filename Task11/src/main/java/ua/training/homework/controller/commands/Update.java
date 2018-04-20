@@ -24,8 +24,8 @@ public class Update implements Command {
             note.setFirstName(request.getParameter(PARAM_FIRST_NAME));
             note.setLogin(request.getParameter(PARAM_LOGIN));
             service.updateNote(note);
-            return URL_UPDATE_MENU;
+            //return URL_UPDATE_MENU;
         }
-        return PAGE_UPDATE_FORM;
+        return URL_READ;
     }
 }
